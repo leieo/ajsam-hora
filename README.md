@@ -134,4 +134,22 @@ __(single or) repeted {component}__
 	{address}
 -page}
 
+## Important advices
+
+Always use multi-word component names  [...](https://vuejs.org/v2/style-guide/#Multi-word-component-names-essential)
+
+Always use **key** with **v-for** [...](https://vuejs.org/v2/style-guide/#Keyed-v-for-essential)
+
+Each component should be in its own file, in a **components/** folder [...](https://vuejs.org/v2/style-guide/#Component-files-strongly-recommended)
+
+Components that should only ever have a single active instance should begin with the **The** prefix [...](https://vuejs.org/v2/style-guide/#Single-instance-component-names-strongly-recommended)
+
+Prefer kebab-case over lowerCamelCase and UpperCamelCase [...](https://vuejs.org/v2/style-guide/#Single-file-component-filename-casing-strongly-recommended)
+
+## More advices
+
+Learn more about "props validator" [...](https://vuejs.org/v2/style-guide/#Prop-definitions-essential)
+
+
+
 
