@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VueJS - Doc' officielle / </title>
+	<!-- 
+        https://laracasts.com/series/learn-vue-2-step-by-step/episodes/11
+	-->
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+	<style type="text/css"> body { padding: 40px; } </style>
+</head>
+<body>
+
+	<div id="root">
+
+		<tabs>
+
+			<tab name="Ajsam Hora" :selected="true">
+				<h1>Here is the content for the ajsam hora tab.</h1>
+			</tab>
+
+			<tab name="Qui ?">
+				<h1>Here is the content for the qui ? tab.</h1>
+			</tab>
+			
+			<tab name="Créations">
+				<h1>Here is the content for the créations tab.</h1>
+			</tab>
+			
+			<tab name="Projets de résidence">
+				<h1>Here is the content for the projets de résidence tab.</h1>
+			</tab>
+			
+			<tab name="Actualité">
+				<h1>Here is the content for the actualité tab.</h1>
+			</tab>
+			
+			<tab name="Contact">
+				<h1>Here is the content for the contact tab.</h1>
+			</tab>
+			
+
+		</tabs>
+
+	</div>
+
+
+	<script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+	<script src="tabs.js"></script>
+</body>
+</html>
