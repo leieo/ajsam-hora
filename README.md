@@ -8,14 +8,22 @@ Organisation of the website.
 
 Home
 Home (Ajsam Hora / Image / Philosophy)
-	|__ Ajsam Hora (About / Us / Presentation)
-			|__ **Ajsam Hora**
-				|__ Création (anchor)
-				|__ Diffusion (anchor)
-				|__ Transmission (anchor)
-			|__ **Qui ?** (team)	
-				 |__ Qui ? (member)
-			|__ **Créations** (projects)
+
+. . |__ Ajsam Hora (About / Us / Presentation)
+
+. . . . . . |__ **Ajsam Hora**
+
+. . . . . . |__ Création (anchor)
+
+. . . . . . |__ Diffusion (anchor)
+
+. . . . . . . . . |__ Transmission (anchor)
+
+. . . . . . |__ **Qui ?** (team)	
+
+. . . . . . . . . |__ Qui ? (member)
+
+. . . . . . |__ **Créations** (projects)
 				 |__ Créations (project)
 			|__ **Projets en cours** (inprogess-projects)
 				 |__ Projets en cours (project)
