@@ -17,43 +17,64 @@ Home (Ajsam Hora / Image / Philosophy)
 
 . . . . . . |__ Diffusion (anchor)
 
-. . . . . . . . . |__ Transmission (anchor)
+. . . . . . . . . . . . |__ Transmission (anchor)
 
 . . . . . . |__ **Qui ?** (team)	
 
-. . . . . . . . . |__ Qui ? (member)
+. . . . . . . . . . . . |__ Qui ? (member)
 
 . . . . . . |__ **Créations** (projects)
-				 |__ Créations (project)
-			|__ **Projets en cours** (inprogess-projects)
-				 |__ Projets en cours (project)
-			|__ **Actualité** (articles)
-				 |__ article (anchor)
-			|__ **Contact**
-				 |__ confirm sent (modal)
+
+. . . . . . . . . . . . |__ Créations (project)
+
+. . . . . . |__ **Projets en cours** (inprogess-projects)
+
+. . . . . . . . . . . . |__ Projets en cours (project)
+
+. . . . . . |__ **Actualité** (articles)
+
+. . . . . . . . . . . . |__ article (anchor)
+
+. . . . . . |__ **Contact**
+
+. . . . . . . . . . . . |__ confirm sent (modal)
 
 
 ## Structure - Components
 
 {component}
+
 ~~optional {component}~~
+
 __(single or) repeted {component}__
+
 ~~__optional + repeted {component}__~~
 
 
 ### Qui ? 
 
 ###### team
+
 {page-
+
 	{navbar}
+
 	{page-title}
+
 	*{short-text}*
+
 	{team-
+
 		{member-	->	*link towards member page*
+
 			{person-name}
+
 			{portrait}
+
 		-member}
+
 	-team}
+	
 -page}
 
 ###### member
