@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <h1>{{ title }}</h1>
+    <div class="section">
+      <message></message>
+      <creation-grid></creation-grid>
+    </div>
+
+    <!--
     <div class="section columns">
-
       <div class="column is-1-tablet is-2-desktop is-one-fifth-widescreen is-3-fullhd reveal">i</div>
-
       <div class="column">
-
         <div class="columns is-multiline">
-          
+
           <div class="column is-one-third reveal1">
             <figure class="image is-3by2 is-red level framed"></figure>
           </div>
@@ -30,16 +33,17 @@
           </div>
 
           <div class="column is-one-third reveal2">
+            
           </div>
+
         </div>
-
-
       </div>
-
       <div class="column is-1-tablet is-2-desktop is-one-fifth-widescreen is-3-fullhd reveal">i</div>
-
     </div>
+    -->
 
+
+<!--
     <div class="columns">
 
       <div class="column is-one-third">
@@ -53,7 +57,7 @@
       </div>
 
     </div>
-
+-->
     
 <!--
     <h3>{{ projectTitle }}</h3>
@@ -66,16 +70,15 @@
 
     <h5>{{ projectTitle }}</h5>
   -->
-
-    <button class="button">test</button>
   </div>
 </template>
 
 <script>
-import Project from './components/Project.vue';
+import Message from './components/Message.vue'
+import CreationGrid from './components/CreationGrid.vue'
 export default {
   name: 'app',
-  components: { Project },
+  components: { Message, CreationGrid },
   data () {
     return {
       msg: 'Hello World',
