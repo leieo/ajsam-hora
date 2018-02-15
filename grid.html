@@ -34,14 +34,12 @@
 		<input type="text" v-model="message">{{ message }}<br><br>
 		<div class="box" :class="cls">Salut les gens</div>
 
-		<input type="checkbox" v-model="isinvisible">
-
 
         <div class="columns is-multiline">
         	<div class="column is-one-third">
-			    <figure class="image is-3by2 level framed" v-on:mouseover="show" v-on:mouseout="hide">
-	        		<img src="./ajsam-hora/src/img/banjaluka.jpg" class="is-overlay level-item" :class="clsimg" v-if="isvisible">
-					<h3 class="is-overlay level-item">Banja Luka</h3>
+			    <figure class="image is-3by2 level framed" v-on:mouseover="showText" v-on:mouseout="showImage">
+	        		<img src="./ajsam-hora/src/img/banjaluka.jpg" class="is-overlay level-item" v-if="imageVisible">
+					<h3 class="is-overlay level-item" v-if="textVisible">Banja Luka</h3>
 				</figure>
         	</div>
         </div>
