@@ -1,11 +1,12 @@
+//TESTS CREATION
 <template>
 	<div>
 	    <figure class="image is-3by2 level framed">
 			<!-- add class "is-invisible" on image <img> or title <p> -->
 			<!-- change title aspect (use h3, h4, ... ?) -->
 			<!-- :src="src" / props / v-bind / communication entre composants ...-->
-			<img src="../img/nissinila.jpg" class="is-overlay level-item">
-			<h3 class="is-overlay has-text-centered level-item">{{ name }}</h3>
+			<img src="../img/nissinila.jpg" class="is-overlay level-item" v-model="image">
+			<h3 class="is-overlay has-text-centered level-item" :class"clstxt()">{{ name }}</h3>
 	    </figure>
 	</div>
 </template>

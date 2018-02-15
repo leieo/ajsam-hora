@@ -2,83 +2,30 @@
   <div id="app">
     <h1>{{ title }}</h1>
     <div class="section">
-      <message></message>
-      <creation-grid></creation-grid>
+      <creation-grid>
+      </creation-grid>
     </div>
-
     <!--
     <div class="section columns">
-      <div class="column is-1-tablet is-2-desktop is-one-fifth-widescreen is-3-fullhd reveal">i</div>
-      <div class="column">
-        <div class="columns is-multiline">
-
-          <div class="column is-one-third reveal1">
-            <figure class="image is-3by2 is-red level framed"></figure>
-          </div>
-
-          <div class="column is-one-third reveal2">
-            <figure class="image is-3by2 is-blue level framed"></figure>
-          </div>
-
-          <div class="column is-one-third reveal1">
-            <figure class="image is-3by2 is-orange level framed"></figure>
-          </div>
-
-          <div class="column is-one-third reveal2">
-            <figure class="image is-3by2 level framed"></figure>
-          </div>
-
-          <div class="column is-one-third reveal1">
-            <figure class="image is-3by2 level framed"></figure>
-          </div>
-
-          <div class="column is-one-third reveal2">
-            
-          </div>
-
-        </div>
+      <div class="column is-4"></div>
+      <div class="column is-4">
+        <creation>
+          <img src="./img/banjaluka.jpg" class="is-overlay">
+          <h3 class="is-overlay has-text-centered level-item">Pouet Nila</h3>
+        </creation>
       </div>
-      <div class="column is-1-tablet is-2-desktop is-one-fifth-widescreen is-3-fullhd reveal">i</div>
     </div>
     -->
-
-
-<!--
-    <div class="columns">
-
-      <div class="column is-one-third">
-        <project>Multicorps</project>
-      </div>
-      <div class="column is-one-third">
-        <project>Vertikal</project>
-      </div>
-      <div class="column is-one-third">
-        <project>NissiNila</project>
-      </div>
-
-    </div>
--->
-    
-<!--
-    <h3>{{ projectTitle }}</h3>
-    <h4>{{ memberName }}</h4>
-    <br>
-
-    <h3>{{ projectTitle }}</h3>
-    <h2>{{ memberName }}</h2>
-    <br>
-
-    <h5>{{ projectTitle }}</h5>
-  -->
   </div>
 </template>
 
 <script>
 import Message from './components/Message.vue'
+import Creation from './components/Creation.vue'
 import CreationGrid from './components/CreationGrid.vue'
 export default {
   name: 'app',
-  components: { Message, CreationGrid },
+  components: { Message, Creation, CreationGrid },
   data () {
     return {
       msg: 'Hello World',
@@ -101,7 +48,6 @@ h1 {
   letter-spacing: 3px;
   padding: 30px;
 }
-
 
 a {
   color: #42b983;

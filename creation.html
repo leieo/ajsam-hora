@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VueJS - tests </title>
+	<!-- 
+        tests vueJS hors webpack
+	-->
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+	<style type="text/css"> 
+		body {padding: 40px;} 
+		.framed {border: 2px solid black;}
+		.is-blue {background-color: #a6b1f7;}
+		.is-green {background-color: #a6f7c3;}
+	</style>
+</head>
+<body>
+
+	<div id="root">
+		<p>
+			Prénom: {{ prenom }} <br>
+			Nom: {{ nom }} <br>
+			Nom complet: <input type="text" v-model="fullname"> <br>
+		</p>
+		<br>
+
+		<input type="checkbox" v-model="isgreen">
+		<input type="text" v-model="message">{{ message }}<br><br>
+		<div class="box" :class="cls">Salut les gens</div>
+		
+		<section>
+			<creations>
+				<creation></creation>
+				<creation></creation>
+			</creations>
+		</section>
+
+
+	</div>
+
+	<script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+	<script src="creation.js"></script>
+
+</body>
+</html>
