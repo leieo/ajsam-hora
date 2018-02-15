@@ -1,26 +1,21 @@
 <template>
 	<div>
-	    <figure class="image is-3by2 level framed">
-			<!-- add class "is-invisible" on image <img> or title <p> -->
-			<!-- change title aspect (use h3, h4, ... ?) -->
-			<!-- :src="src" / props / v-bind / communication entre composants ...-->
-			<img src="../img/nissinila.jpg" class="is-overlay level-item">
-			<h3 class="is-overlay has-text-centered level-item">{{ name }}</h3>
+	    <figure class="image is-3by2 level framed" @mouseover="shwtxt" @mouseout="shwimg">
+			<slot></slot>
 	    </figure>
 	</div>
 </template>
 
 <script>
 export default {
-	// props: src {type: String, default: ...}
-	data() {
-		return {
-			name: 'Nissi Nila'
-		};
-	},
   methods: {
-    toggleImgTxt() {
-      this.class
+    shwtxt () {
+    	console.log('directive "shwtxt" envoyée')
+    	this.$emit('shwtxt')
+    },
+    shwimg () {
+    	console.log('directive "shwimg" envoyée')
+    	this.$emit('shwimg')
     }
   }
 }
@@ -28,12 +23,6 @@ export default {
 
 <style>
 
-h3 {
-  color: black;
-  font-family:'Waiting for the Sunrise', Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  letter-spacing: 7px;
-}
-
 .framed {border: 2px solid black;}
+
 </style>

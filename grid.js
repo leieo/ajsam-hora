@@ -6,7 +6,7 @@ Vue.component('creations', {
 	        <div class="columns is-multiline">
 	        	<creation v-for="creation in creations" :key="creation.name" class="column is-one-third" v-on:shwtxt="showText" v-on:shwimg="showImage">
 	        		<img :src="creation.imgurl" class="is-overlay level-item" v-if="imageVisible">
-					<h3 class="is-overlay level-item" v-if="textVisible">{{ creation.name }}</h3>
+					<h3 class="is-overlay has-text-centered level-item" v-if="textVisible">{{ creation.name }}</h3>
 	        	</creation>
 	        </div>
 	      </div>
@@ -64,10 +64,10 @@ Vue.component('creation', {
 new Vue({
 	el: '#root',
 	data: {
-		imageVisible: true,
-		textVisible: false,
 		isgreen: false,
-		message: ''
+		message: '',
+		imageVisible: true,
+		textVisible: false
 	},
 	methods: {
 		showText () {
